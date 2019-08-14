@@ -30,7 +30,7 @@ const AnecdoteList = (props) => {
   )
 }
 
-const anecdotesToShow = ({ anecdotes, filter}) => {
+const anecdotesToShow = ({ anecdotes, filter }) => {
   return anecdotes
     .filter(a => a.content.toUpperCase().includes(filter.toUpperCase()))
     .sort((a, b) => b.votes - a.votes)
